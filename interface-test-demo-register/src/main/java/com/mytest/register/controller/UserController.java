@@ -40,7 +40,7 @@ public class UserController extends BaseController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "name", value = "NAME",type = "String"),
             @ApiImplicitParam(name = "password", value = "PASSWORD", type ="String"),
-            @ApiImplicitParam(name = "phone", value = "PHONE", dataType = "Int", example = "100")
+            @ApiImplicitParam(name = "phone", value = "PHONE", type = "String")
     })
     @PostMapping(value = "/create")
     @ResponseStatus(HttpStatus.OK)

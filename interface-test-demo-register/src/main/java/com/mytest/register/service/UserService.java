@@ -38,7 +38,7 @@ public class UserService extends BaseService {
      * @param phone
      * @return
      */
-    @Transactional(value = "TransactionManager", rollbackFor = Exception.class)
+    @Transactional(rollbackFor = Exception.class)
     public Map<String, Object> createUser(String name,
                                           String password,
                                           String phone) throws Exception {
